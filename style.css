@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+    --primary-cyan: hsl(179, 62%, 43%);
+    --cyan: hsl(179, 58%, 54%);
+    --primary-yellow: hsl(67deg, 100%, 36%);
+
+    --Neutral-gray: hsl(204, 43%, 93%);
+    --Neutral-grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    background: var(--Neutral-gray);
+    font-family: "Karla", sans-serif;
+}
+
+main {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 25vh;
+    }
+}
+
+.hero {
+    grid-column: 1 / span 2;
+    background: white;
+    padding: 3rem 4rem 3rem 2.5rem;
+}
+
+.hero h1 {
+    color: var(--primary-cyan);
+    font-size: 1.3rem;
+}
+
+.hero .moneyback {
+    color: rgb(130, 177, 0);
+    margin: 1rem 0;
+}
+
+.hero .paragraph {
+    color: var(--Neutral-grayish-blue);
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.pricing {
+    background: var(--primary-cyan);
+    padding: 3rem 4rem 3rem 2rem;
+    /* padding-right: 2rem; */
+}
+
+.pricing h1 {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.pricing .price {
+    margin: 1rem 0 0.2rem 0;
+    color: #85d5d2;
+}
+
+.pricing .price span {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.pricing .extra {
+    color: white;
+    letter-spacing: 1px;
+}
+
+.pricing button {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 12px;
+    background: yellowgreen;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.faq {
+    padding: 1.5rem;
+    padding-right: 2rem;
+    background: var(--cyan);
+    color: white;
+}
+
+.faq ul {
+    margin: 1rem 0;
+}
+
+.faq ul li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+footer {
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 3vh;
+    color: grey;
+}
+
+footer a {
+    text-decoration: none;
+    color: cadetblue;
+}
