@@ -25,7 +25,7 @@ body {
 }
 
 main {
-    max-width: 800px;
+    max-width: 750px;
     width: 90%;
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -120,6 +120,7 @@ main {
 .faq ul li {
     margin: 5px 0;
     font-size: 14px;
+    color: var(--Neutral-gray);
 }
 
 footer {
